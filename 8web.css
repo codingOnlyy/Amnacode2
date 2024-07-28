@@ -1,0 +1,201 @@
+body, html {
+    margin: 0;
+    padding: 0;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.header {
+    background: url('https://img.freepik.com/free-photo/view-starry-night-sky-with-nature-mountains-landscape_23-2151614791.jpg?t=st=1722183607~exp=1722187207~hmac=966f0b2f2bdabafd0fda190cbf3aecc4f37af58e1a06d5434903922f3e90d741&w=826') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header p {
+
+    font-size: 1.2em;
+    margin: 25px 200px 0px 200px;
+}
+
+.cta-button {
+    background: #000c3f;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background: #ff4b3a;
+}
+
+.at-a-glance {
+    background: #3f4d64;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.glance-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1%;
+    vertical-align: top;
+}
+
+.glance-item h2 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.glance-item p {
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .glance-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* atomic headline */
+
+.features-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.features-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.feature-card i {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.feature-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.feature-card p {
+    font-size: 1em;
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    .feature-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section h1 {
+        text-align: center;
+    }
+
+    .feature-card {
+        width: 100%;
+    }
+}
+
+/* Atomic Content */
+
+.content-section {
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.content-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.content-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-text h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.content-text h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.content-text p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+}
+
+.content-image {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .content-container.reverse {
+        flex-direction: column;
+    }
+
+    .content-text {
+        padding: 10px;
+    }
+
+    .content-image {
+        padding: 10px;
+    }
+}
